@@ -18,8 +18,22 @@ spring:
 #     控制台显示SQL
     show-sql: true
 
-  redis:
-    host: 192.168.1.129
+#  redis:
+#    host: 192.168.1.129
+
+  rabbitmq:
+    host: localhost
+    username: guest
+    password: guest
+
+#  elasticsearch:
+#    jest:
+#      uris: http://192.168.1.129:9200
+
+    elasticsearch:
+      cluster-name: elasticsearch
+      cluster-nodes: 192.168.1.129:9300
+
 
 
 
